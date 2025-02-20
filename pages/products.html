@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page3</title>
+    <link rel="stylesheet" href="../style/products.css" >
+</head>
+
+<body>
+    <header>
+        <div class="headflex">
+            <div class="menu">
+                <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                <label for="burger-checkbox" class="burger"></label>
+                <ul class="menu-list">
+                    <li><a href="../index.html" class="menu-item">Главная</a>
+                    <li>
+                    <li><a href="page3.html" class="menu-item">Продукция</a>
+                    <li>
+                    <li><a href="../index.html" class="menu-item">Что нового</a>
+                    <li></li>
+                    <li><a href="https://www.google.ru/maps" class="menu-item">Где купить</a>
+                    <li></li>
+                    <li><a href="#" class="menu-item">Регистрация товара</a>
+                    <li>
+                    <li><a href="#" class="menu-item">Видео NSI</a>
+                    <li>
+                    <li><a href="#" class="menu-item">Поддержка</a>
+                    <li>
+                    <li><a href="#" class="menu-item">NSI форум</a>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="navigation">
+                <a class="logonav" href="../index.html">
+                    <img src="../assets/images/logo.png" href="../index.html" class="headlogo">
+                </a>
+                <a class="textnav" href="products.html">
+                    <p class="textnav">Продукция</p>
+                </a>
+                <a class="textnav" href="../index.html">
+                    <p class="textnav">Что нового</p>
+                </a>
+                <a class="textnav" href="https://www.google.ru/maps">
+                    <p class="textnav">Где купить</p>
+                </a>
+            </div>
+            <div class="navigation2">
+                <a href="register.html">
+                    <img src="../assets/images/loginicon.png" href="../index.html" class="headicon">
+                    <!--вход в аккаунт -->
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <p><img src="../assets/images/FONPAGE3.png" class="mainimage"></p>
+        <div class="mainflex">
+            <button onclick="myFunction()" class="maintext1">Фильтр</button>
+            <p class="maintext">Новинки</p>
+        </div>
+
+
+        <div class=" centr">
+            <div class="filters" id="drop">   
+                <div class="size">
+                    <h2 class="filtext">Производитель</h2>
+                    <div id="myDropdown">
+                        <input type="checkbox" class="btn" value="MSI" class="filtext">NSI<br>
+                        <input type="checkbox" class="btn" value="MSI" class="filtext">MSI<br>
+                        <input type="checkbox" class="btn" value="Lenovo" class="filtext"> Lenovo<br>
+                        <input type="checkbox" class="btn" value="Honor" class="filtext">Honor<br>
+                        <input type="checkbox" class="btn" value="ASUS" class="filtext">ASUS<br>
+                    </div>
+                </div>
+
+                <div class="size">
+                    <h2 class="filtext">Диагональ экрана</h2>
+                    <div id="myDropdown">
+                        <input type="checkbox" class="btn" value="MSI" class="filtext">17.3" FullHD (16:9)<br>
+                        <input type="checkbox" class="btn" value="Lenovo" class="filtext"> 15.6” FullHD (16:9)<br>
+                        <input type="checkbox" class="btn" value="Honor" class="filtext">16” WUXGA (16:10) <br>
+                        <input type="checkbox" class="btn" value="ASUS" class="filtext">14” FullHD<br>
+                    </div>
+                </div>
+
+                <div class="size">
+                    <h2 class="filtext">Цвет</h2>
+                    <div id="myDropdown">
+                        <input type="checkbox" class="btn" value="MSI" class="filtext">Темно-серый<br>
+                        <input type="checkbox" class="btn" value="Lenovo" class="filtext"> Серый (16:9)<br>
+                        <input type="checkbox" class="btn" value="Honor" class="filtext">Темно-коричневый <br>
+                        <input type="checkbox" class="btn" value="ASUS" class="filtext">Черный<br>
+                    </div>
+                </div>
+
+                <div class="size">
+                    <h2 class="filtext">Процессор</h2>
+                    <div id="myDropdown">
+                        <input type="checkbox" class="btn" value="MSI" class="filtext">Intel<br>
+                        <input type="checkbox" class="btn" value="Lenovo" class="filtext"> AMD<br>
+                    </div>
+                </div>
+
+                <div class="size">
+                    <h2 class="filtext">Видеокарта</h2>
+                    <div id="myDropdown">
+                        <input type="checkbox" class="btn" value="MSI" class="filtext">Nvidia<br>
+                        <input type="checkbox" class="btn" value="Lenovo" class="filtext">AMD<br>
+                        <input type="checkbox" class="btn" value="Lenovo" class="filtext">Intel<br>
+                    </div>
+                </div>
+
+                <div class="size">
+                    <h2 class="filtext">Накопитель</h2>
+                    <div id="myDropdown">
+                        <input type="checkbox" class="btn" value="MSI" class="filtext">HDD<br>
+                        <input type="checkbox" class="btn" value="Lenovo" class="filtext">SSD<br>
+                    </div>
+                </div>
+
+                <div class="price">
+                    <h2 class="filtext">Цена</h2>
+                    <div class="price-input"><input class="input-text" type="text" value="">&nbsp;-&nbsp;</div>
+                    <div class="price-input"><input class="input-text" type="text" value="">&nbsp;руб.&nbsp;</div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../script/js.js"></script>
+
+        <div class="content">
+            <div class="card"> <!-- First -->
+                <div class="card__top">
+                    <a href="page2.html" class="card__image">
+                        <img src="../assets/images/nout2.png" alt="Ноутбук MSI CreatorPro X18" />
+                    </a>
+                    <div class="card__label">
+                        -70%
+                    </div>
+                </div>
+                <div class="card__bottom">
+                    <div class="card__prices">
+                        <div class="card__price card__price--discount">135 000</div>
+
+                    </div>
+                    <a href="page2.html" class="card__title">
+                        Ноутбук MSI CreatorPro X18
+                    </a>
+                    <a href="page2.html">
+                        <button class="card__add">Купить</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card"> <!-- Second -->
+                <div class="card__top">
+                    <a href="honor_maximus.html" class="card__image">
+                        <img src="../assets/images/honormaxumus.jpg" alt="Ноутбук MSI CreatorPro X18" />
+                    </a>
+                    <div class="card__label">
+                        -65%
+                    </div>
+                </div>
+                <div class="card__bottom">
+                    <div class="card__prices">
+                        <div class="card__price card__price--discount">159 990</div>
+                    </div>
+                    <a href="honor_maximus.html" class="card__title">
+                        Ноутбук Honor Maximus J52
+                    </a>
+                    <a href="honor_maximus.html">
+                        <button class="card__add">Купить</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card"> <!-- 3 -->
+                <div class="card__top">
+                    <a href="Lenovo_superduper.html" class="card__image">
+                        <img src="../assets/images/Lenovo.jpg" alt="Ноутбук Lenovo Superduper FF" />
+                    </a>
+                    <div class="card__label">
+                        -50%
+                    </div>
+                </div>
+                <div class="card__bottom">
+                    <div class="card__prices">
+                        <div class="card__price card__price--discount">90 000</div>
+                    </div>
+                    <a href="Lenovo_superduper.html" class="card__title">
+                        Ноутбук Lenovo Superduper
+                    </a>
+                    <a href="Lenovo_superduper.html">
+                        <button class="card__add">Купить</button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="content">
+
+            <div class="card"> <!-- 4 -->
+                <div class="card__top">
+                    <a href="MSI_Deronius_GG.html" class="card__image">
+                        <img src="../assets/images/MSI.png" alt="MSI Deronius GG" />
+                    </a>
+                    <div class="card__label">
+                        -30%
+                    </div>
+                </div>
+                <div class="card__bottom">
+                    <div class="card__prices">
+                        <div class="card__price card__price--discount">135 000</div>
+                    </div>
+                    <a href="MSI_Deronius_GG.html" class="card__title">
+                        Ноутбук MSI Deronius
+                    </a>
+                    <a href="MSI_Deronius_GG.html">
+                        <button class="card__add">Купить</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card"> <!-- 5 -->
+                <div class="card__top">
+                    <a href=honor_Jumper.html class="card__image">
+                        <img src="../assets/images/honor.jpg" alt="Ноутбук Honor Jumper 07" />
+                    </a>
+                    <div class="card__label">
+                        -10%
+                    </div>
+                </div>
+                <div class="card__bottom">
+                    <div class="card__prices">
+                        <div class="card__price card__price--discount">235 000</div>
+                    </div>
+                    <a href="honor_Jumper.html" class="card__title">
+                        Ноутбук Honor Jumper 07
+                    </a>
+                    <a href="honor_Jumper.html">
+                        <button class="card__add">Купить</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card"> <!-- 6 -->
+                <div class="card__top">
+                    <a href="Lenovo_GIGABIT.html" class="card__image">
+                        <img src="../assets/images/lenovotop.jpg" alt="Ноутбук LENOVO GIGABIT V16" />
+                    </a>
+                    <div class="card__label">
+                        -90%
+                    </div>
+                </div>
+                <div class="card__bottom">
+                    <div class="card__prices">
+                        <div class="card__price card__price--discount">45 000</div>
+                    </div>
+                    <a href="Lenovo_GIGABIT.html" class="card__title">
+                        Ноутбук LENOVO GIGABIT V16
+                    </a>
+                    <a href="Lenovo_GIGABIT.html">
+                        <button class="card__add">Купить</button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="filtra">
+            <div id="filterss">
+
+                <div class="size">
+                    <h2 class="filtext">Производитель</h2>
+                    <div id="myDropdown">
+                        <input type="checkbox" class="btn" value="MSI" class="filtext">NSI<br>
+                        <input type="checkbox" class="btn" value="MSI" class="filtext">MSI<br>
+                        <input type="checkbox" class="btn" value="Lenovo" class="filtext"> Lenovo<br>
+                        <input type="checkbox" class="btn" value="Honor" class="filtext">Honor<br>
+                        <input type="checkbox" class="btn" value="ASUS" class="filtext">ASUS<br>
+                    </div>
+                </div>
+
+                <div class="size">
+                    <h2 class="filtext">Диагональ экрана</h2>
+                    <div id="myDropdown">
+                        <input type="checkbox" class="btn" value="MSI" class="filtext">17.3" FullHD (16:9)<br>
+                        <input type="checkbox" class="btn" value="Lenovo" class="filtext"> 15.6” FullHD (16:9)<br>
+                        <input type="checkbox" class="btn" value="Honor" class="filtext">16” WUXGA (16:10) <br>
+                        <input type="checkbox" class="btn" value="ASUS" class="filtext">14” FullHD<br>
+                    </div>
+                </div>
+
+                <div class="size">
+                    <h2 class="filtext">Цвет</h2>
+                    <div id="myDropdown">
+                        <input type="checkbox" class="btn" value="MSI" class="filtext">Темно-серый<br>
+                        <input type="checkbox" class="btn" value="Lenovo" class="filtext"> Серый (16:9)<br>
+                        <input type="checkbox" class="btn" value="Honor" class="filtext">Темно-коричневый <br>
+                        <input type="checkbox" class="btn" value="ASUS" class="filtext">Черный<br>
+                    </div>
+                </div>
+
+                <div class="size">
+                    <h2 class="filtext">Процессор</h2>
+                    <div id="myDropdown">
+                        <input type="checkbox" class="btn" value="MSI" class="filtext">Intel<br>
+                        <input type="checkbox" class="btn" value="Lenovo" class="filtext"> AMD<br>
+                    </div>
+                </div>
+
+                <div class="size">
+                    <h2 class="filtext">Видеокарта</h2>
+                    <div id="myDropdown">
+                        <input type="checkbox" class="btn" value="MSI" class="filtext">Nvidia<br>
+                        <input type="checkbox" class="btn" value="Lenovo" class="filtext">AMD<br>
+                        <input type="checkbox" class="btn" value="Lenovo" class="filtext">Intel<br>
+                    </div>
+                </div>
+
+                <div class="size">
+                    <h2 class="filtext">Накопитель</h2>
+                    <div id="myDropdown">
+                        <input type="checkbox" class="btn" value="MSI" class="filtext">HDD<br>
+                        <input type="checkbox" class="btn" value="Lenovo" class="filtext">SSD<br>
+                    </div>
+                </div>
+
+                <div class="price">
+                    <h2 class="filtext">Цена</h2>
+                    <div class="price-input"><input class="input-text" type="text" value="">&nbsp;-&nbsp;</div>
+                    <div class="price-input"><input class="input-text" type="text" value="">&nbsp;руб.&nbsp;</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="content">
+
+            <div class="card">
+                <div class="card__top">
+                    <a href="Gamer111.html" class="card__image">
+                        <img src="../assets/images/nout3.png" alt="Ноутбук Gamer111" />
+                    </a>
+                    <div class="card__label">
+                        -70%
+                    </div>
+                </div>
+                <div class="card__bottom">
+                    <div class="card__prices">
+                        <div class="card__price card__price--discount">105 000</div>
+                    </div>
+                    <a href="Gamer111.html" class="card__title">
+                        Ноутбук Gamer111
+                    </a>
+                    <a href="Gamer111.html">
+                        <button class="card__add">Купить</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__top">
+                    <a href="Pobeditel'.html" class="card__image">
+                        <img src="../assets/images/pobeditel'.jpg" alt="Ноутбук MSI CreatorPro X18" />
+                    </a>
+                    <div class="card__label">
+                        -30%
+                    </div>
+                </div>
+                <div class="card__bottom">
+                    <div class="card__prices">
+                        <div class="card__price card__price--discount">100 000</div>
+                    </div>
+                    <a href="Pobeditel'.html" class="card__title">
+                        Ноутбук Pobeditel'
+                    </a>
+                    <a href="Pobeditel'.html">
+                        <button class="card__add">Купить</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__top">
+                    <a href="NeDlyaDoti.html" class="card__image">
+                        <img src="../assets/images/ne-dlya-dot.webp" alt="Ноутбук MSI CreatorPro X18" />
+                    </a>
+                    <div class="card__label">
+                        -10%
+                    </div>
+                </div>
+                <div class="card__bottom">
+                    <div class="card__prices">
+                        <div class="card__price card__price--discount">80 000</div>
+                    </div>
+                    <a href="NeDlyaDoti.html" class="card__title">
+                        Ноутбук MSI NeDlyaDoti
+                    </a>
+                    <a href="NeDlyaDoti.html">
+                        <button class="card__add">Купить</button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="content">
+
+            <div class="card">
+                <div class="card__top">
+                    <a href="NsiLimit.html" class="card__image">
+                        <img src="../assets/images/NSIlimit.jpg" alt="Ноутбук MSI CreatorPro X18" />
+                    </a>
+                    <div class="card__label">
+                        -40%
+                    </div>
+                </div>
+                <div class="card__bottom">
+                    <div class="card__prices">
+                        <div class="card__price card__price--discount">50 999</div>
+                    </div>
+                    <a href="NsiLimit.html" class="card__title">
+                        Ноутбук NSI Limit
+                    </a>
+                    <a href="NsiLimit.html">
+                        <button class="card__add">Купить</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__top">
+                    <a href="#" class="card__image">
+                        <img src="../assets/images/fps-max.webp" alt="Ноутбук LENOVO FPSmax" />
+                    </a>
+                    <div class="card__label">
+                        -20%
+                    </div>
+                </div>
+                <div class="card__bottom">
+                    <div class="card__prices">
+                        <div class="card__price card__price--discount">105 000</div>
+                    </div>
+                    <a href="FPSMAX.html" class="card__title">
+                        Ноутбук NSI FPSmax
+                    </a>
+                    <a href="FPSMAX.html">
+                        <button class="card__add">Купить</button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>О нас</h3>
+                <p>Компания NSI - лучший магазин ноутбуков!</p>
+            </div>
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p>Email: info@gmail.com</p>
+                <p>Телефон: +7 (123) 456-78-90</p>
+            </div>
+            <div class="footer-section">
+                <h3>Социальные сети</h3>
+                <ul>
+                    <li><a href="#">Одноклассники</a></li>
+                    <li><a href="#">ВКонтакте</a></li>
+                    <li><a href="#">Телеграм</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Все права защищены. Компания NSI не несет ответственности за продажу некачественной или
+                поддельной продукции.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
